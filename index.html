@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>COMEX - Guilherme</title>
+    </head>
+    <body>
+        <script>
+            var titulo1 = "1. Visão do produto"
+            var titulo2 = "2. Entidades importantes"
+            var titulo3 = "3. Requisitos não funcionais"
+            var titulo4 = "4. Requisitos funcionais"
+
+            function mostra(conteudo){
+                document.write(conteudo);
+            }
+
+            function mostraH3(conteudoH3){
+                mostra("<h3>" + conteudoH3 + "</h3>");
+            }
+
+            function Cabecalho(){
+                mostra("<h1>>>COMEX<<</h1>")
+                mostra("<hr>")
+            }
+
+            function Conteudo(){
+                mostraH3(titulo1)
+                mostra("<p>O projeto <strong>Comex</strong> é um sistema de e-commerce marketplace. Seu objetivo é permitir que a sua base de clientes tenha acesso a vários vendedores e, assim, consolidar-se como o shopping eletrônico mais popular da internet.</p>")
+                mostraH3(titulo2)
+                mostra("<ul><strong><li>Produto</li><li>Categoria</li><li>Cliente</li><li>Pedido</li><li>ItemDePedido</li></strong></ul>")
+                mostraH3(titulo3)
+                mostraH3("<ul><li>Manutenibilidade</li></ul>")
+                mostra(titulo4)
+                mostra("<p>Os requisitos funcionais são classificados em três categorias no Comex:</p>")
+                mostra("<p><strong>Essencial:</strong> implementação obrigatória para o sistema atingir seu objetivo principal:</p>")
+                mostra("<p><strong>Importante: </strong> acrescentam muito valor ao negócio;</p>")
+                mostra("<p><strong>Desejável:</strong> incrementam usabilidade e funcionalidades.</p>")
+            }
+
+            function Rodape(){
+                mostra("<hr>")
+                mostra("<h2>.:: Alura LEVEL UP ::.</h2>")
+            }
+
+        Cabecalho()
+        Conteudo()
+        Rodape()
+        alert("***Bem vindo ao COMEX***");
+        </script>
+    </body>
+
+</html>
